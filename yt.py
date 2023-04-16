@@ -18,8 +18,9 @@ except:
 
 # Download all videos of a channel
 if url.startswith((
-    'https://www.youtube.com/@pinkroad-9201/', 
-    )):
+   'https://www.youtube.com/c/', 
+    'https://www.youtube.com/channel/', 
+    'https://www.youtube.com/user/'    )):
     ydl_opts = {
         'ignoreerrors': True,
         'abort_on_unavailable_fragments': True,
